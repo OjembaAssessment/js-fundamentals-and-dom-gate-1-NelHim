@@ -1,8 +1,7 @@
 let par = document.getElementById('myParagraph');
 let text = par.textContent;
-console.log(text);
+
 let textArr = text.split(/\s+/);
-console.log(textArr);
 
 // / Use reduce to create an object with the counts of each word
 const wordCounts = textArr.reduce((acc, word) => {
@@ -38,7 +37,6 @@ for (let word of textArr){
         newPar += `${word} `;
     }
 }
-console.log(newPar);
 
 // Update the existing paragraph
 text = newPar;
