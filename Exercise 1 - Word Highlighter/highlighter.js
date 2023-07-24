@@ -41,4 +41,4 @@ for (let word of textArr){
 console.log(newPar);
 
 // Update the existing paragraph
-par.innerHTML = newPar;
+text = newPar;
