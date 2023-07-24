@@ -1,6 +1,6 @@
 let par = document.getElementById('myParagraph');
 let text = par.textContent;
-
+console.log(text);
 let textArr = text.split(/\s+/);
 console.log(textArr);
 
@@ -28,10 +28,10 @@ let newPar = "";
 for (let word of textArr){
     if (first5.includes(word)){
         if (/^[A-Z]/.test(word)) {
-            newPar += `<span style="background-color:yellow;text-decoration:underline;">${word}</span>`;
+            newPar += `<span style="background-color:yellow;text-decoration:underline;">${word}</span> `;
         } 
         else {
-            newPar += `<span style="background-colo:yellow">${word}</span> `;
+            newPar += `<span style="background-color:yellow">${word}</span> `;
         }
     }
     else{
